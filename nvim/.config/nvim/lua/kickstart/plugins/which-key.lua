@@ -37,7 +37,7 @@ return {
 				{ "<leader>w", group = "[W]orkspace" },
 				{ "<leader>w_", hidden = true },
 			})
-			--require("which-key").register({
+			-- require("which-key").register({
 			--	["<leader>c"] = { name = "[C]ode", _ = "which_key_ignore" },
 			--	["<leader>d"] = { name = "[D]ocument", _ = "which_key_ignore" },
 			--	["<leader>r"] = { name = "[R]ename", _ = "which_key_ignore" },
@@ -48,7 +48,7 @@ return {
 			--})
 			-- visual mode
 			require("which-key").add({ "<leader>h", desc = "Git [H]unk", mode = "v" })
-			--require("which-key").register({["<leader>h"] = { "Git [H]unk" },}, { mode = "v" })
+			--require("which-key").register({ ["<leader>h"] = { "Git [H]unk" } }, { mode = "v" })
 		end,
 	},
 }
