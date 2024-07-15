@@ -61,9 +61,8 @@ vim.opt.scrolloff = 10
 
 -- Settings for tab spaces
 vim.opt.tabstop = 4
-vim.softabstop = 4
-vim.shiftwidth = 4
-vim.expandtab = false
-vim.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = false
 
 -- vim: ts=2 sts=2 sw=2 et
