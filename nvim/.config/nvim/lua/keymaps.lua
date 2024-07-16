@@ -35,6 +35,7 @@ vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower win
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
 -- Keybinds to make navigating between tabs easier
+--NOTE: Tmux is set as <TmuxLeader>n/p. N/P are chosen for coherence because Tmux doesn't accept Shift + Tab
 vim.keymap.set("n", "<Leader>n", ":tabnext<CR>", { desc = "Move to next tab" })
 vim.keymap.set("n", "<Leader>p", ":tabprevious<CR>", { desc = "Move to previous tab" })
 
