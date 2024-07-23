@@ -44,6 +44,9 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 
+#Updated Path
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
 #Plugins
 ## P10K
 source ~/.dotfiles/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
