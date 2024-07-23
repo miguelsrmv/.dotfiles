@@ -31,3 +31,9 @@
 [submodule "zsh/.zsh_plugins/zsh-autosuggestions"]
 	path = zsh/.zsh_plugins/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions.git
+[submodule "zsh/.zsh_plugins/zsh-syntax-highlighting"]
+	path = zsh/.zsh_plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "zsh/plugins/zsh-no-PS2"]
+	path = zsh/plugins/zsh-no-PS2
+	url = https://github.com/romkatv/zsh-no-ps2.git
