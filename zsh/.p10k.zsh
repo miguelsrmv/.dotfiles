@@ -37,14 +37,8 @@
   # Zsh >= 5.1 is required.
   [[ $ZSH_VERSION == (5.<1->*|<6->.*) ]] || return
 
-  # Prompt colors.
-  local grey='245'
-  local red='180'
-  local yellow='179'
-  local blue='75'
-  local magenta='176'
-  local cyan='74'
-  local white='145'
+  # Prompt colors (OneDarkPro theme).
+  source ~/.dotfiles/zsh/.p10k.colours.onedarkpro.zsh
 
   # Left prompt segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
