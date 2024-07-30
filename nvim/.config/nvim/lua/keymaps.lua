@@ -53,4 +53,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
+-- Center automatically after moving or searching
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
 -- vim: ts=2 sts=2 sw=2 et
