@@ -22,12 +22,9 @@ return {
 		"jay-babu/mason-nvim-dap.nvim",
 
 		-- Add your own debuggers here
-		"leoluz/nvim-dap-go",
+		--"leoluz/nvim-dap-go",
+		"mfussenegger/nvim-dap-python",
 	},
-	-- Eval var under cursor
-	--vim.keymap.set("n", "<space>?", function()
-	--	require("dapui").eval(nil, { enter = true }')
-	--end),
 	keys = function(_, keys)
 		local dap = require("dap")
 		local dapui = require("dapui")
@@ -107,6 +104,9 @@ return {
 		dap.listeners.before.event_terminated["dapui_config"] = dapui.close
 		dap.listeners.before.event_exited["dapui_config"] = dapui.close
 
+		-- Install Python specific config
+		require("dap-python").setup("python3")
+		--
 		-- Install golang specific config
 		-- require("dap-go").setup({
 		--	delve = {
