@@ -11,7 +11,7 @@ return {
 			-- Load the colorscheme here.
 			-- Like many other themes, this one has different styles, and you could load
 			-- any other, such as 'catppuccin-latte', 'catppuccin-frappe', 'catppuccin-macchiato' or 'catppucin-mocha'
-			vim.cmd.colorscheme("catppuccin-frappe")
+			-- vim.cmd.colorscheme("catppuccin-frappe")
 
 			-- You can configure highlights by doing something like:
 			vim.cmd.hi("Comment gui=none")
@@ -19,4 +19,3 @@ return {
 	},
 }
 -- vim: ts=2 sts=2 sw=2
-
