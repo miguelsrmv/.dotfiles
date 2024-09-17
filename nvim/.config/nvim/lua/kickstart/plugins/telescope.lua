@@ -56,11 +56,16 @@ return {
           -- You can put your default mappings / updates / etc. in here
           --  All the info you're looking for is in `:help telescope.setup()`
           --
-          -- defaults = {
-          --   mappings = {
-          --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-          --   },
-          -- },
+          defaults = {
+            path_display = { "smart "} ,
+            mappings = {
+              i = {
+                  ["<C-k>"] = require("telescope.actions").move_selection_previous, -- move to previous result
+                  ["<C-j>"] = require("telescope.actions").move_selection_next, -- move to next result
+               -- ["<C-enter>"] = 'to_fuzzy_refine'
+                  },
+              },
+          },
           -- pickers = {}
           extensions = {
             ['ui-select'] = {
