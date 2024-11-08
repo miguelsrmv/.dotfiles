@@ -1,6 +1,7 @@
 return {
 	{
 		"cacharle/c_formatter_42.vim",
+		ft = { "c", "h" },
 		config = function()
 			-- Create an autocommand group
 			local group = vim.api.nvim_create_augroup("CFormatterGroup", { clear = true })

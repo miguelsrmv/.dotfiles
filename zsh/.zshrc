@@ -48,6 +48,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin:/home/miguel/.local/bin:/home/miguel/.l
 
 #Aliases
 alias fzfp="fzf --preview='cat {}'"
+alias grademe='bash -c "$(curl https://grademe.fr)"'
 
 #Plugins
 ## P10K

@@ -1,6 +1,7 @@
 return {
 	"MrSloth-dev/42-NorminetteNvim",
 	dependencies = { "nvim-lua/plenary.nvim", "echasnovski/mini.icons" },
+	ft = { "c", "h" },
 	config = function()
 		-- Set up Norminette as usual
 		require("norminette").setup({
