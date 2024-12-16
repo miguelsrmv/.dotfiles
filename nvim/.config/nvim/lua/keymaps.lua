@@ -17,10 +17,10 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- TIP: Disable arrow keys in normal mode
-vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
-vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
-vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
-vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
+-- vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
+-- vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
+-- vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
+-- vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
@@ -48,8 +48,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- [[Custom Commands]]
 -- Keybinds to make navigating between tabs easier
 --NOTE: Tmux is set as <TmuxLeader>n/p. N/P are chosen for coherence because Tmux doesn't accept Shift + Tab
-vim.keymap.set('n', '<Leader>n', ':tabnext<CR>', { desc = 'Move to next tab' })
-vim.keymap.set('n', '<Leader>p', ':tabprevious<CR>', { desc = 'Move to previous tab' })
+vim.keymap.set('n', '<leader>n', ':tabnext<CR>', { desc = 'Move to next tab' })
+vim.keymap.set('n', '<leader>p', ':tabprevious<CR>', { desc = 'Move to previous tab' })
 
 -- Center automatically after moving or searching
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
@@ -57,4 +57,13 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
+-- Split windows horizontally or vertically
+vim.keymap.set('n', '<leader>wh', ':split<CR>', { desc = 'Split window horizontally' })
+vim.keymap.set('n', '<leader>wv', ':vsplit<CR>', { desc = 'Split window vertically' })
+
+-- Resize windows with arrows
+vim.keymap.set('n', '<Up>', ':resize -2<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<Down>', ':resize +2<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<Left>', ':vertical resize -2<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<Right>', ':vertical resize +2<CR>', { noremap = true, silent = true })
 -- vim: ts=2 sts=2 sw=2 et
