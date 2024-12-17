@@ -66,4 +66,5 @@ vim.keymap.set('n', '<Up>', ':resize -2<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<Down>', ':resize +2<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<Left>', ':vertical resize -2<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<Right>', ':vertical resize +2<CR>', { noremap = true, silent = true })
+
 -- vim: ts=2 sts=2 sw=2 et
