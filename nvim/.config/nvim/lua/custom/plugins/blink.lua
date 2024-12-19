@@ -3,11 +3,9 @@ return {
   'saghen/blink.cmp',
   -- optional: provides snippets for the snippet source
   dependencies = {
-    'neovim/nvim-lspconfig', -- LSP
     'hrsh7th/cmp-buffer', -- source for text in buffer
     'hrsh7th/cmp-path', -- source for file system paths
-    'hrsh7th/cmp-cmdline', -- source for cmdline
-    -- 'hrsh7th/cmp-omni',				-- source for omnifunc
+    'hrsh7th/cmp-buffer', -- source for file system paths
     'L3MON4D3/LuaSnip', -- snippet engine
     'saadparwaiz1/cmp_luasnip', -- for autocompletion
     'rafamadriz/friendly-snippets', -- useful snippets
@@ -61,7 +59,6 @@ return {
   -- without having to redefine it
   opts_extend = { 'sources.default' },
   ]]
-  --
 }
 
 -- vim: ts=2 sts=2 sw=2 et

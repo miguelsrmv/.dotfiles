@@ -34,7 +34,6 @@ require('lazy').setup({
 
   require 'kickstart/plugins/conform',
 
-  -- NOTE: Commented because I am now trying out blink
   require 'kickstart/plugins/cmp',
 
   require 'kickstart/plugins/todo-comments',
