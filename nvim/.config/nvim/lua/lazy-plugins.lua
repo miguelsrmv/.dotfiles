@@ -27,12 +27,14 @@ require('lazy').setup({
 
   require 'kickstart/plugins/which-key',
 
-  require 'kickstart/plugins/telescope',
+  -- NOTE: Commented because I am now trying out Fzf Lua
+  -- require 'kickstart/plugins/telescope',
 
   require 'kickstart/plugins/lspconfig',
 
   require 'kickstart/plugins/conform',
 
+  -- NOTE: Commented because I am now trying out blink
   require 'kickstart/plugins/cmp',
 
   require 'kickstart/plugins/todo-comments',
