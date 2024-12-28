@@ -1,5 +1,4 @@
 return {
-  -- Commented because I am trying out blink
   { -- Autocompletion
     'hrsh7th/nvim-cmp',
     event = 'InsertEnter',
