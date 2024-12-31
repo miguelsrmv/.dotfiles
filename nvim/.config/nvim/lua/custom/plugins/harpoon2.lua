@@ -18,7 +18,11 @@ return {
       -- Use FZF-Lua to display the Harpoon files
       fzf.fzf_exec(file_paths, {
         previewer = 'builtin', -- Use FZF-Lua's built-in file previewer
-        winopts = { title = window_title, title_pos = 'center' },
+        winopts = {
+          title = window_title,
+          title_pos = 'center',
+          cursorline = true,
+        },
         actions = {
           ['default'] = function(selected)
             if #selected > 0 then
