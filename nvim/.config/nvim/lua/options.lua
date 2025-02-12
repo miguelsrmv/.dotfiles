@@ -71,4 +71,7 @@ vim.opt.expandtab = false
 vim.g.user42 = 'mde-sa--'
 vim.g.mail42 = 'mde-sa--@student.42porto.com'
 
+-- Settings for bufferline
+vim.opt.termguicolors = true
+
 -- vim: ts=2 sts=2 sw=2 et
