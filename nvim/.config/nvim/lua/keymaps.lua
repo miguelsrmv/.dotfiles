@@ -46,10 +46,20 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- [[Custom Commands]]
--- Keybinds to make navigating between tabs easier
---NOTE: Tmux is set as <TmuxLeader>n/p. N/P are chosen for coherence because Tmux doesn't accept Shift + Tab
-vim.keymap.set('n', '<leader>n', ':tabnext<CR>', { desc = 'Move to next tab' })
-vim.keymap.set('n', '<leader>p', ':tabprevious<CR>', { desc = 'Move to previous tab' })
+-- Keybinds to make navigating between buffers and tabs easier
+vim.keymap.set('n', ']b', ':bnext<CR>', { silent = true }) -- Next buffer
+vim.keymap.set('n', '[b', ':bprevious<CR>', { silent = true }) -- Previous buffer
+vim.keymap.set('n', ']B', ':blast<CR>', { silent = true }) -- Last buffer
+vim.keymap.set('n', '[B', ':bfirst<CR>', { silent = true }) -- First buffer
+
+vim.keymap.set('n', ']t', ':tabnext<CR>', { silent = true }) -- Next tab
+vim.keymap.set('n', '[t', ':tabprevious<CR>', { silent = true }) -- Previous tab
+vim.keymap.set('n', ']T', ':tablast<CR>', { silent = true }) -- Last tab
+vim.keymap.set('n', '[T', ':tabfirst<CR>', { silent = true }) -- First tab
+
+-- Direct tab access with :T{number}
+vim.cmd 'command! -nargs=1 T tabnext <args>'
+vim.cmd 'command! -nargs=1 B buffernext <args>'
 
 -- Center automatically after moving or searching
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
