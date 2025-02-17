@@ -69,6 +69,7 @@ return {
         { '<leader>u', group = '[U]I Settings' },
         { '<leader>H', group = '[H]unks' },
         { '<leader>4', group = '[4]2 header' },
+        { '<leader>h', group = '[H]arpoon ' },
       },
     },
   },

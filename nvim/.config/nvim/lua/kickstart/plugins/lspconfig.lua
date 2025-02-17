@@ -201,6 +201,9 @@ return {
         yamlls = {
           filetypes = { 'yaml' },
         },
+        ts_ls = {
+          filetypes = { 'typescript, typescriptreact' },
+        },
 
         -- gopls = {},
         -- rust_analyzer = {},
@@ -250,6 +253,7 @@ return {
         'pyright', -- used to format python
         'markdownlint', -- used for markdown files
         'yaml-language-server', -- Used for yaml
+        'typescript-language-server', -- Used for typescript
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
