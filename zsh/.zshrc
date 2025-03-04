@@ -68,7 +68,7 @@ source ~/dotfiles/zsh/plugins/zsh-no-PS2/zsh-no-ps2.plugin.zsh
 bindkey -e
 
 # Bind Home, End, Insert, and Delete keys
-bindkey "^[[H" beginning-of-line    # Home key
-bindkey "^[[F" end-of-line          # End key
+bindkey "^[[1~" beginning-of-line    # Home key
+bindkey "^[[4~" end-of-line          # End key
 bindkey "^[[2~" overwrite-mode      # Insert key
 bindkey "^[[3~" delete-char         # Delete key
