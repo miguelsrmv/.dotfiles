@@ -6,7 +6,15 @@ return {
     version = false, -- set this if you want to always pull the latest change
     opts = {
       provider = 'copilot',
-      -- vendors = {
+      vendors = {
+        perplexity = {
+          __inherited_from = 'openai',
+          api_key_name = 'PERPLEXITY_API_KEY',
+          endpoint = 'https://api.perplexity.ai',
+          model = 'sonar-reasoning-pro',
+        },
+      },
+      -- -- vendors = {
       --   ollama = {
       --     __inherited_from = "ollama",
       --     model = "deepseek-r1:32b"
@@ -53,7 +61,11 @@ return {
           reverse_switch_windows = '<S-Tab>',
         },
       },
-      hints = { enabled = true },
+      hints = { enabled = false },
+      file_selector = {
+        --- @alias FileSelectorProvider "native" | "fzf" | "mini.pick" | "snacks" | "telescope" | string | fun(params: avante.file_selector.IParams|nil): nil
+        provider = 'snacks',
+      },
       windows = {
         ---@type "right" | "left" | "top" | "bottom"
         position = 'left', -- the position of the sidebar
