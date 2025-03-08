@@ -76,7 +76,7 @@ end, { desc = 'avante: generate automated commit message' })
 
 -- Asks for automatically docummented functions using Doxygen
 vim.keymap.set('n', '<leader>aD', function()
-  vim.cmd ":AvanteAsk 'Please add Doxygen comments to all functions in this file that do not already have one.'"
+  vim.cmd ":AvanteAsk 'Please fill this file with Doxygen comments to complete its documentation. Update any incorrect or incomplete comments.'"
 end, { desc = 'avante: generate automated doxygen comments ' })
 
 -- vim: ts=2 sts=2 sw=2 et
