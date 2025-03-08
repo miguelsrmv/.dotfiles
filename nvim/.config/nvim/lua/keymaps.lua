@@ -72,11 +72,11 @@ vim.keymap.set('n', '<leader>ac', function()
   vim.cmd ':Git add .'
   vim.cmd ':Git commit --verbose'
   vim.cmd ":AvanteAsk 'Please write a commit-message describing the changes in this diff, respecting Conventional Commits guidelines'"
-end, { desc = 'Generate automated Git Commit message' })
+end, { desc = 'avante: generate automated commit message' })
 
 -- Asks for automatically docummented functions using Doxygen
 vim.keymap.set('n', '<leader>aD', function()
   vim.cmd ":AvanteAsk 'Please add Doxygen comments to all functions in this file that do not already have one.'"
-end, { desc = ' Generate automated Doxygen comments ' })
+end, { desc = 'avante: generate automated doxygen comments ' })
 
 -- vim: ts=2 sts=2 sw=2 et
