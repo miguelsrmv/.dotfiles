@@ -1,6 +1,3 @@
--- [[ Basic Keymaps ]]
---  See `:help vim.keymap.set()`
-
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
@@ -64,17 +61,22 @@ vim.cmd 'command! -nargs=1 B buffernext <args>'
 -- Center automatically after moving or searching
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
-vim.keymap.set('n', 'n', 'nzzzv')
-vim.keymap.set('n', 'N', 'Nzzzv')
 
 -- Split windows horizontally or vertically
 vim.keymap.set('n', '<leader>wh', ':split<CR>', { desc = 'Split window horizontally' })
 vim.keymap.set('n', '<leader>wv', ':vsplit<CR>', { desc = 'Split window vertically' })
 
--- Resize windows with arrows
-vim.keymap.set('n', '<Up>', ':resize -2<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<Down>', ':resize +2<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<Left>', ':vertical resize -2<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<Right>', ':vertical resize +2<CR>', { noremap = true, silent = true })
+-- [[AI powered Commands]]
+-- Asks for automated commit messages
+vim.keymap.set('n', '<leader>ac', function()
+  vim.cmd ':Git add .'
+  vim.cmd ':Git commit --verbose'
+  vim.cmd ":AvanteAsk 'Please write a commit-message describing the changes in this diff, respecting Conventional Commits guidelines'"
+end, { desc = 'Generate automated Git Commit message' })
+
+-- Asks for automatically docummented functions using Doxygen
+vim.keymap.set('n', '<leader>aD', function()
+  vim.cmd ":AvanteAsk 'Please add Doxygen comments to all functions in this file that do not already have one.'"
+end, { desc = ' Generate automated Doxygen comments ' })
 
 -- vim: ts=2 sts=2 sw=2 et

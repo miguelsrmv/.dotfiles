@@ -6,7 +6,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Set up the prompt
-
 autoload -Uz promptinit
 promptinit
 prompt adam1
@@ -77,4 +76,3 @@ bindkey "^[[H" beginning-of-line    # Home key
 bindkey "^[[F" end-of-line          # End key
 bindkey "^[[2~" overwrite-mode      # Insert key
 bindkey "^[[3~" delete-char         # Delete key
-
