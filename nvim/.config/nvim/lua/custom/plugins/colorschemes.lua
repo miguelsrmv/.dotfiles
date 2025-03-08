@@ -4,7 +4,7 @@ return {
     priority = 1000, -- Ensures it's loaded first
     opts = { transparent = true },
     config = function()
-      vim.cmd.colorscheme 'nordfox' -- Set active colorscheme
+      vim.cmd.colorscheme 'nightfox' -- Set active colorscheme
       vim.cmd.hi 'Comment gui=none' -- Custom highlights
     end,
   },
