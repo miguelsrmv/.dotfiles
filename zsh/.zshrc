@@ -1,7 +1,7 @@
 # Update Hostname
 export HOSTNAME=$(cat /etc/hostname)
 
-# Load environment variables from .env file
+# Load environment variables from ~/.env file
 if [ -f "$HOME/.env" ]; then
    export $(grep -v '^#' $HOME/.env | xargs)
 fi
@@ -16,5 +16,5 @@ bindkey "^[[F" end-of-line          # End key
 bindkey "^[[2~" overwrite-mode      # Insert key
 bindkey "^[[3~" delete-char         # Delete key
 
-# Start starship
+# Start starship prompt
 eval "$(starship init zsh)"
