@@ -1,6 +1,6 @@
 {
   "42header": { "branch": "master", "commit": "9f51db5cc483951e257aece66f1f4ce3b14cdab1" },
-  "avante.nvim": { "branch": "main", "commit": "c272bcd2ae576e2a8d5d332ff43d019a5b33cc58" },
+  "avante.nvim": { "branch": "main", "commit": "46073c0efd96b5cf83697ef7e43e2189380f713f" },
   "blink.cmp": { "branch": "main", "commit": "49f211fe5d729df53df4c042d7c3464cf47d199e" },
   "catppuccin": { "branch": "main", "commit": "5b5e3aef9ad7af84f463d17b5479f06b87d5c429" },
   "codesnap.nvim": { "branch": "main", "commit": "6400480aa6cc366cbd931146c429aaa64680dab9" },

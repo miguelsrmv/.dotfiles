@@ -26,6 +26,7 @@ return {
     end, { desc = 'Harpoon Add' })
     vim.keymap.set('n', '<leader>hh', function()
       Snacks.picker {
+        title = 'Harpoon',
         finder = generate_harpoon_picker,
         win = {
           input = {
