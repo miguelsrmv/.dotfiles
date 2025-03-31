@@ -73,7 +73,7 @@ return {
             vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
           end
 
-          -- NOTE: Changed the implementations to Fzf Lua, rather than Telescope
+          -- NOTE: Changed the implementations to Snacks Picker, rather than Telescope
           -- Jump to the definition of the word under your cursor.
           --  This is where a variable was first declared, or where a function is defined, etc.
           --  To jump back, press <C-t>.
@@ -189,25 +189,10 @@ return {
 
       local servers = {
         clangd = {
-          filetypes = { 'c', 'cpp', 'h', 'hpp', 'objc', 'objcpp' },
+          filetypes = { 'c', 'cpp', 'h', 'hpp', 'objc', 'objcpp', 'cuda', 'proto' },
         },
         bashls = {
-          filetypes = { 'sh', 'zsh' },
-        },
-        pyright = {
-          filetypes = { 'py' },
-        },
-        markdownlint = {
-          filetypes = { 'md ' },
-        },
-        yamlls = {
-          filetypes = { 'yaml' },
-        },
-        html = {
-          filetypes = { 'html' },
-        },
-        ts_ls = {
-          filetypes = { 'typescript, typescriptreact' },
+          filetypes = { 'bash', 'sh', 'zsh' },
         },
         tailwindcss = {
           filetypes = { 'tss' },
@@ -258,7 +243,7 @@ return {
         'clang-format', -- Used to format C/C++ code
         'bashls', -- Used to format bash
         'pyright', -- used to format python
-        'markdownlint', -- used for markdown files
+        'markdown_oxide', -- used for markdown files
         'yaml-language-server', -- Used for yaml
         'typescript-language-server', -- Used for typescript
         'html-lsp', -- Used for html

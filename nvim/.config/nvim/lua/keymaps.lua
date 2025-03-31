@@ -68,7 +68,7 @@ vim.keymap.set('n', '<leader>wv', ':vsplit<CR>', { desc = 'Split window vertical
 
 -- [[AI powered Commands]]
 -- Asks for automated commit messages
-vim.keymap.set('n', '<leader>ac', function()
+vim.keymap.set('n', '<leader>aC', function()
   vim.cmd ':Git add .'
   vim.cmd ':Git commit --verbose'
   vim.cmd ":AvanteAsk 'Please write a commit-message describing the changes in this diff, respecting Conventional Commits guidelines'"

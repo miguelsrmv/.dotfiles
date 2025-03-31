@@ -27,7 +27,6 @@ require('lazy').setup({
 
   require 'kickstart/plugins/which-key',
 
-  -- NOTE: Commented because I am now trying out Fzf Lua
   -- require 'kickstart/plugins/telescope',
 
   require 'kickstart/plugins/lspconfig',
