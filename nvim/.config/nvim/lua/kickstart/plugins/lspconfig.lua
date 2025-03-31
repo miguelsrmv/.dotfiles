@@ -194,9 +194,14 @@ return {
         bashls = {
           filetypes = { 'bash', 'sh', 'zsh' },
         },
-        tailwindcss = {
-          filetypes = { 'tss' },
+        pyright = {},
+        markdown_oxide = {},
+        yamlls = {},
+        html = {
+          filetypes = { 'html', 'templ', 'htmlangular' },
         },
+        tailwindcss = {},
+        ts_ls = {},
         -- gopls = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
