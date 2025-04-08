@@ -58,10 +58,6 @@ vim.keymap.set('n', '[T', ':tabfirst<CR>', { silent = true }) -- First tab
 vim.cmd 'command! -nargs=1 T tabnext <args>'
 vim.cmd 'command! -nargs=1 B buffernext <args>'
 
--- Center automatically after moving or searching
-vim.keymap.set('n', '<C-d>', '<C-d>zz')
-vim.keymap.set('n', '<C-u>', '<C-u>zz')
-
 -- Split windows horizontally or vertically
 vim.keymap.set('n', '<leader>wh', ':split<CR>', { desc = 'Split window horizontally' })
 vim.keymap.set('n', '<leader>wv', ':vsplit<CR>', { desc = 'Split window vertically' })

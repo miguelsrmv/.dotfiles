@@ -202,6 +202,7 @@ return {
         },
         tailwindcss = {},
         ts_ls = {},
+        -- nginx_language_server = {},
         -- gopls = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -252,6 +253,7 @@ return {
         'typescript-language-server', -- Used for typescript
         'html-lsp', -- Used for html
         'tailwindcss', -- Used for tailwind
+        -- 'nginx-language-server', -- User for nginx
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

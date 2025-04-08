@@ -25,3 +25,6 @@ bindkey "^[[3~" delete-char         # Delete key
 
 # Start starship prompt
 eval "$(starship init zsh)"
+
+# Created by `pipx` on 2025-03-31 11:24:15
+export PATH="$PATH:/home/miguel/.local/bin"
