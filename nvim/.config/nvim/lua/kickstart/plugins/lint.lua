@@ -1,4 +1,8 @@
 return {
+<<<<<<< HEAD
+=======
+
+>>>>>>> f36056b3072f133e208c93dfb7ff7d2a59968445
   { -- Linting
     'mfussenegger/nvim-lint',
     event = { 'BufReadPre', 'BufNewFile' },
@@ -57,5 +61,8 @@ return {
     end,
   },
 }
+<<<<<<< HEAD
 
 -- vim: ts=2 sts=2 sw=2 et
+=======
+>>>>>>> f36056b3072f133e208c93dfb7ff7d2a59968445
