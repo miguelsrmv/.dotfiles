@@ -25,9 +25,9 @@ return {
 
       -- Useful status updates for LSP.
       { 'j-hui/fidget.nvim', opts = {} },
-      -- 'hrsh7th/cmp-nvim-lsp',
-      'saghen/blink.cmp',
+
       -- Allows extra capabilities provided by blink
+      'saghen/blink.cmp',
     },
     config = function()
       -- Brief aside: **What is LSP?**
@@ -305,4 +305,5 @@ return {
     end,
   },
 }
+
 -- vim: ts=2 sts=2 sw=2 et
