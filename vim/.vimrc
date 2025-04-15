@@ -44,14 +44,17 @@ set showmatch        " Highlight matching braces
 
 " ========== CTAGS SUPPORT ==========
 set tags=./tags,tags;$HOME " Look for tags file in project
-
-" Jump to definition using ctags
-nnoremap <leader>gd :tag <C-r><C-w><CR>
+" === Ctags-based navigation ===
+nnoremap gd <C-]>         " Go to definition
+nnoremap gD g]            " Show all matching tags
 
 " Search for references (inside Vim)
 nnoremap <leader>r :vimgrep /<C-r><C-w>/g **/*<CR>:copen<CR>
 nnoremap <leader>n :cnext<CR>  " Next reference
 nnoremap <leader>p :cprev<CR>  " Previous reference
+
+" Create tags
+command! MakeTags !ctags -R .
 
 " ========== QUALITY-OF-LIFE ==========
 autocmd FileType markdown setlocal spell " Enable spell check in Markdown
