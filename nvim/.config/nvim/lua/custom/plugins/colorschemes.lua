@@ -15,4 +15,8 @@ return {
   { 'rebelot/kanagawa.nvim', event = 'VeryLazy' }, -- Lazy-load
   { 'catppuccin/nvim', name = 'catppuccin', event = 'VeryLazy' }, -- Lazy-load
   { 'gbprod/nord.nvim', event = 'VeryLazy' }, -- Lazy-load
+  {
+    'neanias/everforest-nvim',
+    event = 'VeryLazy',
+  },
 }

@@ -31,6 +31,9 @@ alias ls="ls --color=auto"
 # PATH Update
 export PATH="$PATH:/home/miguel/.local/bin"
 
+# Update Manpage viewer
+export MANPAGER='nvim +Man!'
+
 # Fix wrong Home/End/Del/Insert bindings
 bindkey -e
 bindkey "^[[H" beginning-of-line    # Home key
