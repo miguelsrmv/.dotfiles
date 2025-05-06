@@ -71,17 +71,4 @@ vim.cmd 'command! -nargs=1 B buffernext <args>'
 vim.keymap.set('n', '<leader>wh', ':split<CR>', { desc = 'Split window horizontally' })
 vim.keymap.set('n', '<leader>wv', ':vsplit<CR>', { desc = 'Split window vertically' })
 
--- [[AI powered Commands]]
--- Asks for automated commit messages
-vim.keymap.set('n', '<leader>aC', function()
-  vim.cmd ':Git add .'
-  vim.cmd ':Git commit --verbose'
-  vim.cmd ":AvanteAsk 'Please write a commit-message describing the changes in this diff, respecting Conventional Commits guidelines'"
-end, { desc = 'avante: generate automated commit message' })
-
--- Asks for automatically docummented functions using Doxygen
-vim.keymap.set('n', '<leader>aD', function()
-  vim.cmd ":AvanteAsk 'Please fill this file with Doxygen comments to complete its documentation. Update any incorrect or incomplete comments.'"
-end, { desc = 'avante: generate automated doxygen comments ' })
-
 -- vim: ts=2 sts=2 sw=2 et

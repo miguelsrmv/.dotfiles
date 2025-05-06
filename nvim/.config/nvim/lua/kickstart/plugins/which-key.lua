@@ -59,7 +59,6 @@ return {
 
       -- Document existing key chains
       spec = {
-        { '<leader>a', group = '[A]vante', mode = { 'n', 'v' } },
         { '<leader>D', group = '[D]ebug', mode = 'n' },
         { '<leader>s', group = '[S]earch', mode = { 'n', 'v' } },
         { '<leader>w', group = '[W]orkspace', mode = 'n' },
@@ -70,7 +69,8 @@ return {
         { '<leader>H', group = '[H]unks', mode = { 'n', 'v' } },
         { '<leader>4', group = '[4]2 header', mode = 'n' },
         { '<leader>h', group = '[H]arpoon ', mode = 'n' },
-        { '<leader>c', group = '[C]odesnap', mode = 'x' },
+        { '<leader>c', group = '[C]oPilot', mode = { 'n', 'v', 'x' } },
+        { '<leader>C', group = '[C]odesnap', mode = 'x' },
       },
     },
   },
