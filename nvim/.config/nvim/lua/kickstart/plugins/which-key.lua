@@ -60,6 +60,7 @@ return {
       -- Document existing key chains
       spec = {
         { '<leader>a', group = '[A]vante', mode = { 'n', 'v', 'x' } },
+        { '<leader>ap', group = 'prompts', mode = { 'n', 'v', 'x' } },
         { '<leader>D', group = '[D]ebug', mode = 'n' },
         { '<leader>s', group = '[S]earch', mode = { 'n', 'v' } },
         { '<leader>w', group = '[W]orkspace', mode = 'n' },
